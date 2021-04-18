@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content ="width=device-width , initial">
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+		<title>Digital clock</title>
+		<scriot action="index.js"></scriot>
+
+</head>
+<body>
+    <div class ="contaner">
+    	
+    	<div class="box">
+    		
+    		<div class="hours">
+    			<h1 id="hours">8</h1>
+    		</div>
+    		<h1>hours</h1>
+    	</div>
+
+    	<div class="box">
+    		
+    		<div class="minits">
+    			<h1 id="minits">8</h1>
+    		</div>
+    		<h1>minits</h1>
+    	</div>
+
+    	<div class="box">
+    		
+    		<div class="seconds">
+    			<h1 id="seconds">8</h1>
+    		</div>
+    		<h1>seconds</h1>
+    	</div>
+
+    	<div class="box">
+    		
+    		<div class="amorpm">
+    			<h1 id="amorpm">6</h1>
+    		</div>
+    		<h1>amorpm</h1>
+    	</div>
+
+    </div>
+    	<script type="text/javascript">
+
+		fonction showTime(){
+
+			var date = new Date();
+			var h = date.getHours();
+			var m = date.getMinutes();
+			var s = date.getSecond();
+
+			//var time = h + ":" + m + ":" +s;
+
+			document.getElementById("MyClockDisplay").innerHTML = h;
+			document.getElementById("MyClockDisplay").textHTML = m;
+			document.getElementById("MyClockDisplay").textHTML = s;
+		
+		}
+	    	showTime();
+	
+	     </script>
+
+    
+ 
+</body>
+</html>
